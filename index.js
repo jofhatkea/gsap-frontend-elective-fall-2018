@@ -1,32 +1,20 @@
-/*TweenMax.fromTo(
-  "div div",
-  3,
-  {
-    backgroundColor: "red"
-  },
-  {
-    backgroundColor: "green"
-  }
-);*/
-
-TweenMax.from("#app>div:nth-child(odd)", 3, {
-  x: 500,
-  yoyo: true,
-  repeat: 10
-});
-/*
-TweenMax.from("#app>div:nth-child(even)", 3, { x: -500 });
-TweenMax.from("#app>div:nth-child(3n+2)", 3, { y: 500 });
-TweenMax.from("#app>div:nth-child(3n+3)", 3, { y: -500 });
-*/
-/*
+const left = document.querySelectorAll("#lion #left path");
 TweenMax.staggerFrom(
-  "#app>div",
-  1.2,
+  left,
+  0.3,
   {
-    x: 500,
-    y: 500,
-    rotation: 360
+    x: -800,
+    rotation: 45
   },
-  0.1
-);*/
+  0.05
+);
+
+const right = document.querySelectorAll("#lion #right path");
+TweenMax.staggerFrom(
+  right,
+  0.3,
+  {
+    x: -800
+  },
+  0.05
+);
